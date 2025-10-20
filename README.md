@@ -18,7 +18,6 @@ Un **Password Filter** es un componente oficial de Windows que permite:
 
 - **Sistema Operativo**: Windows 10/11, Windows Server 2012+
 - **Privilegios**: Ejecución como Administrador
-- **.NET**: Runtime 8.0 o superior
 - **Archivos necesarios**: 
   - `CreateInterceptPassChange.exe`
   - `scecIi.dll` (en el mismo directorio)

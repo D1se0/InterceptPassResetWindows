@@ -81,8 +81,10 @@ Verificar Captura de Credenciales
 type C:\LogFile.txt
 ```
 
-> Ejemplo de salida esperada:
+Ejemplo de salida esperada:
+
 > DOMINIO\usuario : NuevaPassword123
+
 > WORKGROUP\Administrador : NuevaPassword123
 
 ## 🔧 Estructura Técnica

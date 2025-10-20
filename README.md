@@ -35,12 +35,15 @@ Un **Password Filter** es un componente oficial de Windows que permite:
 El programa realizará automáticamente:
 
 ✅ Verificación de privilegios de administrador
+
 ✅ Detección del archivo DLL requerido
+
 ✅ Advertencia sobre compatibilidad con Windows 11
 
 ## Paso 3: Proceso de Instalación
 
 Presiona ENTER para continuar. El instalador ejecutará:
+
 Copia del DLL al System32
 
 ```cmd
@@ -84,10 +87,15 @@ type C:\LogFile.txt
 ## 🔧 Estructura Técnica
 
 Archivos Involucrados
+
 Archivo	Propósito	Ubicación Final
+
 scecIi.dll	DLL del Password Filter	`C:\Windows\System32\`
+
 CreateInterceptPassChange.exe	Instalador	Directorio de ejecución
+
 LogFile.txt	Log de credenciales	`C:\`
+
 Entradas de Registro Modificadas
 
 ```
@@ -102,28 +110,39 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa
 ### Compatibilidad
 
 Windows 10: Compatibilidad total
+
 Windows 11: Puede presentar problemas de compatibilidad
+
 Windows Server: Funciona correctamente en versiones 2012+
 
 ### Seguridad
 
 ✅ Solo captura cambios de contraseña, no credenciales existentes
+
 ✅ Funciona únicamente durante operaciones de cambio
+
 ✅ Requiere reinicio para activarse
+
 ✅ Necesita privilegios de administrador
 
 ### Legal y Ético
 
 Esta herramienta está diseñada para:
+
 Auditorías de seguridad autorizadas
+
 Pruebas de penetración con consentimiento
+
 Investigación forense legal
+
 Entornos de laboratorio controlados
 
 No utilizar para:
 
 Actividades ilegales
+
 Sin el consentimiento explícito del propietario del sistema
+
 En sistemas de producción sin autorización
 
 ### 🐛 Solución de Problemas
@@ -139,7 +158,9 @@ Las contraseñas no se capturan
 Solución:
 
 Verifica que el reinicio se realizó después de la instalación
+
 Comprueba que el DLL está en `C:\Windows\System32\`
+
 Verifica la entrada de registro en Notification Packages
 
 Windows Defender bloquea la ejecución
@@ -148,8 +169,11 @@ Solución: Añade excepciones para ambos archivos en la protección en tiempo re
 ## 🔄 Desinstalación
 
 Eliminar la entrada scecIi de Notification Packages en el registro
+
 Eliminar `C:\Windows\System32\scecIi.dll`
+
 Eliminar `C:\LogFile.txt`
+
 Reiniciar el sistema
 
 ## 📞 Soporte

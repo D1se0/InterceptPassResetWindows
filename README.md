@@ -71,8 +71,9 @@ Probar el Cambio de Contraseña
 net user Administrador NuevaPassword123
 ```
 
-# O mediante interfaz gráfica
-# Panel de Control > Cuentas de Usuario > Cambiar contraseña
+> O mediante interfaz gráfica
+> Panel de Control > Cuentas de Usuario > Cambiar contraseña
+
 Verificar Captura de Credenciales
 
 ```cmd
@@ -80,9 +81,9 @@ Verificar Captura de Credenciales
 type C:\LogFile.txt
 ```
 
-# Ejemplo de salida esperada:
-# DOMINIO\usuario : NuevaPassword123
-# WORKGROUP\Administrador : NuevaPassword123
+> Ejemplo de salida esperada:
+> DOMINIO\usuario : NuevaPassword123
+> WORKGROUP\Administrador : NuevaPassword123
 
 ## 🔧 Estructura Técnica
 
